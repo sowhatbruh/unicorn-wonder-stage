@@ -8,11 +8,13 @@ const Index = () => {
       icon: Code2,
       title: 'Codevance',
       description: 'Advanced coding platform',
+      href: 'https://code.endiidishishir.qzz.io',
     },
     {
       icon: Palette,
       title: 'Niora',
       description: 'Creative design studio',
+      href: 'https://music.endiidishishir.qzz.io',
     },
   ];
 
@@ -35,6 +37,7 @@ const Index = () => {
                 icon={project.icon}
                 title={project.title}
                 description={project.description}
+                href={project.href}
               />
             ))}
           </div>
