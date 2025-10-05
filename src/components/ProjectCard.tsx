@@ -10,7 +10,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ icon: Icon, title, description, href }: ProjectCardProps) => {
   const CardContent = (
-    <Card className="group relative overflow-hidden border-border bg-card/50 backdrop-blur-sm hover:bg-card/80 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-primary/10 cursor-pointer">
+    <Card className="group relative overflow-hidden border-border bg-card/50 backdrop-blur-xl hover:bg-card/80 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-primary/10 cursor-pointer">
       <div className="p-6 flex items-center gap-4">
         <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-secondary flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
           <Icon className="w-6 h-6 text-foreground group-hover:text-primary-foreground transition-colors duration-300" />

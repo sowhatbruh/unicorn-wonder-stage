@@ -13,7 +13,7 @@ const Index = () => {
     {
       icon: Palette,
       title: 'Niora',
-      description: 'Creative design studio',
+      description: 'Ambient,smooth music',
       href: 'https://music.endiidishishir.qzz.io',
     },
   ];
@@ -30,7 +30,7 @@ const Index = () => {
             </h1>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-2">
             {projects.map((project, index) => (
               <ProjectCard
                 key={index}
