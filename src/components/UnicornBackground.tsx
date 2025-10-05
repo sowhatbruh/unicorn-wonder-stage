@@ -45,11 +45,9 @@ const UnicornBackground = () => {
       </div>
       {/* Overlay to cover Unicorn Studio watermark */}
       <div 
-        className="fixed bottom-0 left-1/2 -translate-x-1/2 bg-background z-50 pointer-events-none"
+        className="fixed bottom-0 left-0 right-0 h-20 z-50 pointer-events-none"
         style={{ 
-          width: '230px', 
-          height: '50px',
-          marginBottom: '-5px'
+          background: 'hsl(0 0% 7%)'
         }}
       />
     </>
