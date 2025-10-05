@@ -35,9 +35,9 @@ const UnicornBackground = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 w-full h-full -z-10">
+    <div className="fixed inset-0 w-full h-full -z-10 unicorn-container">
       <div 
-        data-us-project="FtEEV1TYRP71ph6RDJHr" 
+        data-us-project="8cyZz9S3nvapmQIYY0LV" 
         className="w-full h-full"
         style={{ minHeight: '100vh' }}
       />

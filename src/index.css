@@ -96,4 +96,14 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Hide Unicorn Studio watermark */
+  .unicorn-container a[href*="unicorn.studio"],
+  .unicorn-container div[class*="watermark"],
+  .unicorn-container div[style*="position: absolute"][style*="bottom"],
+  .unicorn-container > div > a {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
 }
