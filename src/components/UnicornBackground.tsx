@@ -35,13 +35,24 @@ const UnicornBackground = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 w-full h-full -z-10 unicorn-container">
+    <>
+      <div className="fixed inset-0 w-full h-full -z-10 unicorn-container">
+        <div 
+          data-us-project="8cyZz9S3nvapmQIYY0LV" 
+          className="w-full h-full"
+          style={{ minHeight: '100vh' }}
+        />
+      </div>
+      {/* Overlay to cover Unicorn Studio watermark */}
       <div 
-        data-us-project="8cyZz9S3nvapmQIYY0LV" 
-        className="w-full h-full"
-        style={{ minHeight: '100vh' }}
+        className="fixed bottom-0 left-1/2 -translate-x-1/2 bg-background z-50 pointer-events-none"
+        style={{ 
+          width: '230px', 
+          height: '50px',
+          marginBottom: '-5px'
+        }}
       />
-    </div>
+    </>
   );
 };
 
