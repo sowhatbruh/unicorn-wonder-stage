@@ -1,11 +1,44 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Code2, Palette } from 'lucide-react';
+import UnicornBackground from '@/components/UnicornBackground';
+import ProjectCard from '@/components/ProjectCard';
 
 const Index = () => {
+  const projects = [
+    {
+      icon: Code2,
+      title: 'Codevance',
+      description: 'Advanced coding platform',
+    },
+    {
+      icon: Palette,
+      title: 'Niora',
+      description: 'Creative design studio',
+    },
+  ];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen relative">
+      <UnicornBackground />
+      
+      <div className="relative z-10 flex items-center justify-center min-h-screen p-8">
+        <div className="w-full max-w-2xl">
+          <div className="text-center mb-12">
+            <h1 className="text-5xl font-bold text-foreground mb-4 tracking-tight">
+              My Projects
+            </h1>
+          </div>
+          
+          <div className="space-y-4">
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                icon={project.icon}
+                title={project.title}
+                description={project.description}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
