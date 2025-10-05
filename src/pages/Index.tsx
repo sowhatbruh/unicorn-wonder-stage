@@ -30,7 +30,7 @@ const Index = () => {
             </h1>
           </div>
           
-          <div className="space-y-2">
+          <div className="space-y-3">
             {projects.map((project, index) => (
               <ProjectCard
                 key={index}
